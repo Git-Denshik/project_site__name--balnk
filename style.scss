@@ -1,0 +1,114 @@
+@mixin inter {
+    font-family: 'Inter', sans-serif;
+}
+
+@mixin list-none {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+// === VARIABLES ===
+$breakpoint-sm-min: 576px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+$breakpoint-md-min: 768px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-lg-min: 992px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xxl-min: 1400px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
+
+$base: 4px;
+
+$fs-s: 15px;
+$fs-m: 20px;
+$fs-l: 28px;
+$fs-xl: 32px;
+$fs-xxl: 58px;
+$fs-xxs: 65px;
+
+$color-black: #040F1F;
+$color-bl-white: #0A121E;
+$color-white: #fff;
+$color-bl-blue: #455A74;
+
+// === VARIABLES ===
+
+// === COMON ===
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: $fs-s;
+    color: $color-bl-white;
+}
+
+.section-inner {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+
+    &-wide {
+        max-width: 1365px;
+        width: 100%;
+        padding-top: $base * 2;
+        padding-bottom: $base * 2;
+    }
+}
+
+.btn {
+    color: white;
+
+    &-link {
+        text-decoration: none;
+        color: white;
+        background-color: rgba(10, 18, 30, 0.7);
+        padding: $base*2 $base*6;
+        border-radius: $base;
+        text-transform: uppercase;
+    }
+
+    &-link:hover {
+        transition: .8s;
+        background-color: rgba(10, 18, 30, 0.85);
+    }
+}
+// === / COMON ===
+
+// === HEADER ===
+.main-navigation {
+    display: flex;
+    align-items: center;
+
+    &__inner-wrap {
+        margin-left: auto;
+
+        .nav-wrapper {
+            @include list-none();
+            display: flex;
+
+            &__item {
+                margin-right: $base * 8;
+
+                &-link {
+                    text-decoration: none;
+                    color: $color-bl-blue;
+                    font-size: $fs-s;
+                    text-transform: uppercase;
+                    letter-spacing: 0.6px;
+                    line-height: $base * 6;
+                }
+            }
+        }
+    }
+}
+
+.section-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #E7F1FB;
+    z-index: 10;
+}
+// === / HEADER ===
