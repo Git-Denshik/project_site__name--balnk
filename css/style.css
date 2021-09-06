@@ -18,19 +18,32 @@ body {
 }
 
 .btn {
-  color: white;
-}
-.btn-link {
   text-decoration: none;
   color: white;
-  background-color: rgba(10, 18, 30, 0.7);
-  padding: 8px 24px;
   border-radius: 4px;
   text-transform: uppercase;
+  border: none;
 }
-.btn-link:hover {
-  transition: 0.8s;
-  background-color: rgba(10, 18, 30, 0.85);
+.btn-gray {
+  padding: 8px 24px;
+  background-color: rgba(10, 18, 30, 0.7);
+}
+.btn-gray:hover {
+  transition: 1s;
+  background-color: rgba(10, 18, 30, 0.8);
+}
+.btn-blue {
+  padding: 16px 100px 16px 24px;
+  background-color: #1673FF;
+}
+.btn-blue:hover {
+  background-color: #1465df;
+  transition: 1s;
+}
+.btn-white {
+  color: #0A121E;
+  border: 1px solid rgba(10, 18, 30, 0.2);
+  padding: 16px 108px 16px 24px;
 }
 
 .main-navigation {
@@ -59,10 +72,62 @@ body {
 }
 
 .section-header {
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   left: 0;
-  background-color: #E7F1FB;
+  background-color: #f2f8fd;
   z-index: 10;
+}
+
+.section-frame-one {
+  background: url(/img/frame-one/fon.png) no-repeat center center;
+  background-color: #E7F1FB;
+}
+.section-frame-one .section-inner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper .social {
+  cursor: pointer;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper .social-menu_list {
+  display: flex;
+  flex-direction: column;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper .social-menu_list-link {
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper-left {
+  margin-left: -100px;
+  margin-top: 10px;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper-left h2 {
+  text-indent: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper-left .text-big {
+  width: 524px;
+  font-size: 65px;
+  margin-bottom: 40px;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper-left .text-littele {
+  width: 521px;
+  margin-bottom: 36px;
+  font-size: 20px;
+  color: #455A74;
+  line-height: 2;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper-left .btn-group a {
+  margin-right: 24px;
+}
+.section-frame-one .section-inner .section-frame-one__wrapper-right {
+  margin-right: 100px;
 }/*# sourceMappingURL=style.css.map */

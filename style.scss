@@ -57,20 +57,34 @@ body {
 }
 
 .btn {
+    text-decoration: none;
     color: white;
+    border-radius: $base;
+    text-transform: uppercase;
+    border: none;
 
-    &-link {
-        text-decoration: none;
-        color: white;
-        background-color: rgba(10, 18, 30, 0.7);
+    &-gray {
         padding: $base*2 $base*6;
-        border-radius: $base;
-        text-transform: uppercase;
+        background-color: rgba(10, 18, 30, 0.7);
+    }
+    &-gray:hover {
+        transition: 1s;
+        background-color: rgba(10, 18, 30, 0.8);
     }
 
-    &-link:hover {
-        transition: .8s;
-        background-color: rgba(10, 18, 30, 0.85);
+    &-blue {
+        padding: $base*4 $base*25 $base*4 $base*6;
+        background-color: #1673FF;
+    }
+    &-blue:hover {
+        background-color: #1465df;
+        transition: 1s;
+    }
+
+    &-white {
+        color: $color-bl-white;
+        border: 1px solid rgba(10, 18, 30, 0.2);
+        padding: $base*4 $base*27 $base*4 $base*6;
     }
 }
 // === / COMON ===
@@ -104,11 +118,81 @@ body {
 }
 
 .section-header {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     left: 0;
-    background-color: #E7F1FB;
+    background-color: #f2f8fd;
     z-index: 10;
 }
 // === / HEADER ===
+
+// === FRAME-ONE ===
+.section-frame-one {
+    background: url(/img/frame-one/fon.png) no-repeat center center;
+    background-color: #E7F1FB;
+    
+    .section-inner {
+        padding-top: $base * 10;
+        padding-bottom: $base * 10;
+
+        .section-frame-one__wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .social {
+                cursor: pointer;
+    
+                &-menu {
+    
+                    &_list {
+                        display: flex;
+                        flex-direction: column;
+    
+                        &-link {
+                            margin-top: $base * 7;
+                            margin-bottom: $base * 8;
+                        }
+                    }
+                }
+            }
+
+            &-left {
+                margin-left: -100px;
+                margin-top: 10px;
+
+                h2 {
+                    text-indent: $base * 3;
+                    font-size: $fs-s;
+                    font-weight: 400;
+                    margin-bottom: $base * 3;
+                }
+    
+                .text-big {
+                    width: 524px;
+                    font-size: $fs-xxs;
+                    margin-bottom: $base * 10;
+                }
+    
+                .text-littele {
+                    width: 521px;
+                    margin-bottom: $base * 9;
+                    font-size: $fs-m;
+                    color: $color-bl-blue;
+                    line-height: 2;
+                }
+
+                .btn-group {
+                    a {
+                        margin-right: $base * 6;
+                    }
+                }
+            }
+
+            &-right {
+                margin-right: 100px;
+            }
+        }
+    }
+}
+// === / FRAME-ONE ===
