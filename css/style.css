@@ -281,4 +281,31 @@ body {
   color: #0A121E;
   background-color: #E7F1FB;
   border-radius: 4px;
+}
+
+.section-frame-free {
+  background: url(/img/frame-free/line.png) no-repeat 20% -150%;
+}
+.section-frame-free .section-inner {
+  padding-bottom: 80px;
+}
+.section-frame-free .section-inner .section-frame-free__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-frame-free .section-inner .section-frame-free__group h2 {
+  text-align: center;
+}
+.section-frame-free .section-inner .section-frame-free__group .text {
+  text-align: center;
+}
+.section-frame-free .section-inner .section-frame-free__group .wrapper {
+  display: flex;
+}
+.section-frame-free .section-inner .section-frame-free__group .wrapper-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

@@ -382,6 +382,38 @@ body {
 }
 // === / FRAME-TWO ===
 
+// === FRAME-FREE ===
+.section-frame-free {
+    background: url(/img/frame-free/line.png) no-repeat 20% -150%;
+    .section-inner {
+        padding-bottom: $base * 20;
+
+        .section-frame-free__group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                text-align: center;
+            }
+
+            .text {
+                text-align: center;
+            }
+
+            .wrapper {
+                display: flex;
+
+                &-list {
+                    @include list-none();
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+// === / FRAME-FREE ===
+
 
 
 
