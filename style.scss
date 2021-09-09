@@ -491,6 +491,57 @@ body {
 }
 // === / FRAME-FOUR ===
 
+// === FRAME-FIVE ===
+.section-outer {
+    .section-inner {
+        padding-top: $base * 20;
+        padding-bottom: $base *20;
+    }
+}
+
+.frame-five {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        flex-basis: 44%;
+
+        h2 {
+            text-indent: $base * 10;
+            font-weight: 400;
+            font-size: $fs-s;
+        }
+
+        .text-title {
+            font-size: $fs-xxl;
+            margin-bottom: $base * 5;
+        }
+
+        .text {
+            font-size: $fs-m;
+            color: $color-bl-blue;
+            line-height: 1.5;
+            margin-bottom: $base * 5;
+        }
+
+        .list {
+            @include list-none();
+
+            &-item {
+                font-size: $fs-m;
+                padding: $base * 2;
+            }
+        }
+    }
+
+    &__right {
+        img {
+            margin-right: $base * 18;
+        }
+    }
+}
+// === / FRAME-FIVE ===
+
 
 
 

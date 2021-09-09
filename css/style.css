@@ -376,4 +376,44 @@ body {
   color: #455A74;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+.section-outer .section-inner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.frame-five {
+  display: flex;
+  justify-content: space-between;
+}
+.frame-five__left {
+  flex-basis: 44%;
+}
+.frame-five__left h2 {
+  text-indent: 40px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.frame-five__left .text-title {
+  font-size: 58px;
+  margin-bottom: 20px;
+}
+.frame-five__left .text {
+  font-size: 20px;
+  color: #455A74;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.frame-five__left .list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.frame-five__left .list-item {
+  font-size: 20px;
+  padding: 8px;
+}
+.frame-five__right img {
+  margin-right: 72px;
 }/*# sourceMappingURL=style.css.map */
