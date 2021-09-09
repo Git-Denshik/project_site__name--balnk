@@ -342,4 +342,38 @@ body {
   color: #455A74;
   line-height: 1.5;
   padding: 0 40px 56px 40px;
+}
+
+.section-inner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.frame-four {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.frame-four__right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+.frame-four__right h2 {
+  text-indent: 40px;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.frame-four__right .text-title {
+  width: 540px;
+  font-size: 58px;
+  margin-bottom: 32px;
+}
+.frame-four__right .text {
+  font-size: 20px;
+  color: #455A74;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -451,6 +451,46 @@ body {
 }
 // === / FRAME-FREE ===
 
+// === FRAME-FOUR ===
+.section-inner {
+    padding-top: $base * 10;
+    padding-bottom: $base * 10;
+}
+
+.frame-four {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+
+        h2 {
+            text-indent: $base * 10;
+            font-weight: 400;
+            font-size: $fs-s;
+            text-transform: uppercase;
+            margin-bottom: $base * 4;
+        }
+
+        .text-title {
+            width: 540px;
+            font-size: $fs-xxl;
+            margin-bottom: $base * 8;
+        }
+
+        .text {
+            font-size: $fs-m;
+            color: $color-bl-blue;
+            line-height: 1.5;
+            margin-bottom: $base * 5;
+        }
+    }
+}
+// === / FRAME-FOUR ===
+
 
 
 
