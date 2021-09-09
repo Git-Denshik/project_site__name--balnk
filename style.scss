@@ -452,9 +452,11 @@ body {
 // === / FRAME-FREE ===
 
 // === FRAME-FOUR ===
-.section-inner {
-    padding-top: $base * 10;
-    padding-bottom: $base * 10;
+.section-frame-four {
+    .section-inner {
+        padding-top: $base * 10;
+        padding-bottom: $base * 10;
+    }
 }
 
 .frame-four {
@@ -492,7 +494,7 @@ body {
 // === / FRAME-FOUR ===
 
 // === FRAME-FIVE ===
-.section-outer {
+.section-frame-five {
     .section-inner {
         padding-top: $base * 20;
         padding-bottom: $base *20;
@@ -541,6 +543,56 @@ body {
     }
 }
 // === / FRAME-FIVE ===
+
+// === FRAME-SIX ===
+.section-frame-six {
+    .section-inner {
+        padding-top: $base * 20;
+        padding-bottom: $base * 20;
+    }
+}
+
+.frame-six {
+    display: flex;
+
+    &__left {
+        flex-basis: 55%;
+        margin-top: $base * 12;
+        margin-left: $base * 18;
+    }
+
+    &__right {
+        flex-basis: 45%;
+
+        h2 {
+            text-indent: $base * 8;
+            font-weight: 400;
+            font-size: $fs-s;
+        }
+
+        .text-title {
+            font-size: $fs-xxl;
+            margin-bottom: $base * 5;
+        }
+
+        .text {
+            font-size: $fs-m;
+            color: $color-bl-blue;
+            line-height: 1.5;
+            margin-bottom: $base * 5;
+        }
+
+        .list {
+            @include list-none();
+
+            &-item {
+                font-size: $fs-m;
+                padding: $base * 2;
+            }
+        }
+    }
+}
+// === / FRAME-SIX ===
 
 
 
