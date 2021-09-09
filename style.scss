@@ -252,7 +252,7 @@ body {
                             padding: $base;
                             border-radius: $base;
                             color: white;
-                            background-color: #1673FF;
+                            background-color: #115cce;
                         }
                     }
 
@@ -264,7 +264,7 @@ body {
                             padding: $base;
                             border-radius: $base;
                             color: white;
-                            background-color: #1673FF;
+                            background-color: #115cce;
                         }
                     }
 
@@ -276,14 +276,14 @@ body {
                         padding: $base;
                         border-radius: $base;
                         color: white;
-                        background-color: #1673FF;
+                        background-color: #115cce;
                     }
 
                     .child-blok__one {
                         height: 60px;
                         padding: $base * 3;
                         margin-top: $base * 3;
-                        border: 1px solid #1673FF;
+                        border: 1px solid #115cce;
                         border-radius: $base * 2;
                         background-color: #E7F1FB;
 
@@ -313,7 +313,7 @@ body {
                         }
 
                         .text-number {
-                            color: #1673FF;
+                            color: #115cce;
                             margin-bottom: $base;
                         }
 
@@ -327,7 +327,7 @@ body {
                         }
 
                         .text-adress {
-                            color: #1673FF;
+                            color: #115cce;
                         }
                     }
 
@@ -384,30 +384,67 @@ body {
 
 // === FRAME-FREE ===
 .section-frame-free {
-    background: url(/img/frame-free/line.png) no-repeat 20% -150%;
+    background: url(/img/frame-free/line.png) no-repeat 20% -7%;
     .section-inner {
         padding-bottom: $base * 20;
+    }
+}
 
-        .section-frame-free__group {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+.section-frame-free__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-            h2 {
+    h2 {
+        font-size: $fs-s;
+        color: $color-bl-white;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: $base * 8;
+    }
+
+    .text-subtitle {
+        font-size: $fs-xxl;
+        margin-bottom: $base * 10;
+        text-align: center;
+    }
+
+    .wrapper-list {
+        @include list-none();
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            width: 390px;
+            background-color: #E7F1FB;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: $base * 7;
+                height: $base * 7;
+                background-color: white;
+            }
+
+            img {
+                margin-top: $base * 12;
+                margin-bottom: $base * 9;
+                margin-left: 35%;
+            }
+
+            .text-title {
                 text-align: center;
+                font-size: $fs-l;
+                color: $color-bl-white;
+                margin-bottom: $base * 5;
             }
 
             .text {
+                font-size: $fs-m;
                 text-align: center;
-            }
-
-            .wrapper {
-                display: flex;
-
-                &-list {
-                    @include list-none();
-                    display: flex;
-                }
+                color: $color-bl-blue;
+                line-height: 1.5;
+                padding: 0 $base*10 $base*14 $base*10;
             }
         }
     }
